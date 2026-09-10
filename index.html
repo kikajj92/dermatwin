@@ -2,20 +2,35 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="DermaTwin Clinical HFUS Analyzer — Quantitative High-Frequency Ultrasound skin biomarker analysis dashboard" />
     <title>DermaTwin Clinical HFUS Analyzer v3.5</title>
+    <!-- GitHub Pages Trailing Slash Resolver for Relative Base Assets -->
+    <script>
+      (function() {
+        var path = window.location.pathname;
+        if (path.length > 1 && !path.endsWith('/') && !path.split('/').pop().includes('.')) {
+          window.location.replace(path + '/' + window.location.search + window.location.hash);
+        }
+      })();
+    </script>
     <!-- Core UI Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Pretendard (Korean) -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <script type="module" crossorigin src="./assets/index-lyS35PyK.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-3mwo6wli.css">
+    <script type="module" crossorigin src="./assets/index-DCB476_n.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BRfecqP_.css">
   </head>
-  <body class="bg-[#070B12] text-white antialiased">
-    <div id="root"></div>
+  <body style="background-color: #070B12; color: #FFFFFF; margin: 0; min-height: 100vh;" class="bg-[#070B12] text-white antialiased">
+    <div id="root">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #070B12; color: #E5C392; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; gap: 14px;">
+        <div style="width: 36px; height: 36px; border: 2.5px solid rgba(229,195,146,0.2); border-top-color: #E5C392; border-radius: 50%; animation: dt-spin 0.9s linear infinite;"></div>
+        <div style="font-size: 13px; letter-spacing: 0.2em; font-weight: 600; text-transform: uppercase;">DERMATWiN 로딩 중...</div>
+        <style>@keyframes dt-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
+      </div>
+    </div>
   </body>
 </html>
